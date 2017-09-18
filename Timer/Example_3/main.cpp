@@ -7,7 +7,7 @@ More Embedded tutorials @ http://www.ocfreaks.com/cat/embedded/
 
 #include <LPC17xx.h>
 
-#define PRESCALE 25000 //25000 PCLK clock cycles to increment TC by 1 
+#define PRESCALE (25000-1) //25000 PCLK clock cycles to increment TC by 1 
 
 void initTimer0();
 
@@ -32,8 +32,7 @@ void initTimer0(void)
 	LPC_SC->PCLKSEL0 |= (1<<3); //Set PCLK for timer = CCLK/4 = 100/4 (default)
 	
 	LPC_TIM0->CTCR = 0x0;
-	LPC_TIM0->PR = PRESCALE-1; //Increment LPC_TIM0->TC at every 24999+1 clock cycles
-	//Count begins from zero hence subtracting 1
+	LPC_TIM0->PR = PRESCALE; //Increment LPC_TIM0->TC at every 24999+1 clock cycles
 	//25000 clock cycles @25Mhz = 1 mS
 	
 	LPC_TIM0->MR0 = 500; //Toggle Time in mS
