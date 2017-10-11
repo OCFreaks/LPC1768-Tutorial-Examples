@@ -54,7 +54,7 @@ int main(void)
 {
 	int num=0;
 	//SystemInit(); //gets called by Startup code before main()
-	initUART0();
+	initUART0(); //Init UART0 at baud-rate: 115200 @ 25Mhz PLCK
 	
 	printf("Hey! This is your beloved printf().\nI have been redirected here with scanf()!\n");
 	
