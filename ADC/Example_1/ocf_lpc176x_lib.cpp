@@ -62,22 +62,22 @@ void delayMS(unsigned int milliseconds) //Using Timer0
 
 void U0Write(char cChar)
 {
-	 while ( !(LPC_UART0->LSR & THRE) ); // wait till the THR is empty
-   // now we can write to the queue
-	 if( cChar == '\n' ) //Send <CR+LF>
-	 {
-			LPC_UART0->THR = CARRIAGE_RETURN;
-			while( !(LPC_UART0->LSR & THRE )); 
-			LPC_UART0->THR = LINE_FEED;
-	 }
-	 else
-	 {
-			 LPC_UART0->THR = cChar;
-	 }
+	while ( !(LPC_UART0->LSR & THRE) ); // wait till the THR is empty
+	// now we can write to the queue
+	if( cChar == '\n' ) //Send <CR+LF>
+	{
+		LPC_UART0->THR = CARRIAGE_RETURN;
+		while( !(LPC_UART0->LSR & THRE )); 
+		LPC_UART0->THR = LINE_FEED;
+	}
+	else
+	{
+		LPC_UART0->THR = cChar;
+	}
 }
 
 char U0Read(void)
 {
-	 while( !(LPC_UART0->LSR & RDR )); 
-   return LPC_UART0->RBR; 
+	while( !(LPC_UART0->LSR & RDR )); 
+	return LPC_UART0->RBR; 
 }
