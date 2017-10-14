@@ -1,9 +1,10 @@
-/* Basic Support Library for OCFreaks LPC176x Tutorial Examples @ www.ocfreaks.com
+/* (C) Umang Gajera. www.ocfreaks.com
+Basic Support Library for OCFreaks LPC176x Tutorial Examples
 Adapted from:
 http://www.ocfreaks.com/lpc1768-timer-programming-tutorial/
 http://www.ocfreaks.com/lpc1768-uart-programming-tutorial/
 More Embedded stuff @ http://www.ocfreaks.com/cat/embedded/ 
-*/
+License: GPL.*/
 
 #include <lpc17xx.h>
 #include "ocf_lpc176x_lib.h"
