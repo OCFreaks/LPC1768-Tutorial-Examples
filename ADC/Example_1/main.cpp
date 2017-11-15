@@ -36,7 +36,7 @@ int main(void)
 
 		while((LPC_ADC->ADDR0 & ADC_DONE) == 0); //Wait untill conversion is finished
 		
-		result = (LPC_ADC->ADDR0>>6) & 0x3ff; //12 bit Mask to extract result
+		result = (LPC_ADC->ADDR0>>6) & 0xFFF; //12 bit Mask to extract result
 		printf("AD0.0 = %dmV\n" , (int)( result*VREF ));
 		delayMS(500); //Slowing down Updates to 2 Updates per second
 	}

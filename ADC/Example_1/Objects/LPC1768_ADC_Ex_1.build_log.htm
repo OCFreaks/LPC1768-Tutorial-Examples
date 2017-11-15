@@ -17,7 +17,7 @@ Library Manager: ArmAr.exe V5.06 update 4 (build 422)
 Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
 CPU DLL:         SARMCM3.DLL V5.23
 Dialog DLL:      DARMP1.DLL V1.27.0.0
-Target DLL:      Segger\JL2CM3.dll V2.99.23.0
+Target DLL:      CMSIS_AGDI.dll V1.27.5.0
 Dialog DLL:      TARMP1.DLL V1.26.0.0
  
 <h2>Project:</h2>
@@ -26,11 +26,9 @@ Project File Date:  10/12/2017
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Rebuild target 'Target 1'
-assembling startup_LPC17xx.s...
-compiling main.cpp...
+Build target 'Target 1'
 compiling ocf_lpc176x_lib.cpp...
-compiling system_LPC17xx.c...
+compiling main.cpp...
 linking...
 Program Size: Code=2216 RO-data=332 RW-data=8 ZI-data=608  
 FromELF: creating hex file...
@@ -61,11 +59,11 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.0.1
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\system_LPC17xx.c
-      Source file:   Device\Source\ARM\startup_LPC17xx.s
       Include file:  RTE_Driver\Config\RTE_Device.h
       Include file:  Device\Include\LPC17xx.h
-Build Time Elapsed:  00:00:00
+      Source file:   Device\Source\ARM\startup_LPC17xx.s
+      Source file:   Device\Source\system_LPC17xx.c
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>
