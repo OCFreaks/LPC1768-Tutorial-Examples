@@ -1,6 +1,7 @@
 /*(C) Umang Gajera - www.ocfreaks.com
 LPC1768/LPC1769 ADC Example 2 Source Code using KEIL ARM
-http://www.ocfreaks.com/lpc1768-adc-programming-tutorial/
+http://www.ocfreaks.com/interfacing-ldr-lpc1768/
+Also see: http://www.ocfreaks.com/lpc1768-adc-programming-tutorial/
 More Embedded tutorials @ www.ocfreaks.com/cat/embedded/
 License : GPL.*/
 
