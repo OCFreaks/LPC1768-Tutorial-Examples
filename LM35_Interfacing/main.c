@@ -1,5 +1,6 @@
 /*(C) Umang Gajera - www.ocfreaks.com
 Interfacing LM35 Temperature Sensor with LPC1768/LPC1769 - Example Source Code for KEIL ARM.
+http://www.ocfreaks.com/interfacing-lm35-temperature-sensor-lpc1768/
 Also see: http://www.ocfreaks.com/lpc1768-adc-programming-tutorial/
 More Embedded tutorials @ www.ocfreaks.com/cat/embedded/
 License : GPL.*/
