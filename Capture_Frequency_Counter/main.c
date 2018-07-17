@@ -1,5 +1,6 @@
 /*(C) Umang Gajera - www.ocfreaks.com
 LPC176x Input Capture Tutorial - Example for frequency counter using ARM KEIL
+http://www.ocfreaks.com/lpc1768-timer-input-capture-frequency-counter-tutorial/
 More Embedded tutorials @ www.ocfreaks.com/cat/embedded/
 License: GPL.*/
 
