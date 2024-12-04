@@ -39,7 +39,7 @@ void initTimer0(void)
 	LPC_TIM0->MR0 = 500; //toggle time in mS
 	LPC_TIM0->MCR = (1<<1); //Reset on MR0 Match
 	LPC_TIM0->EMR |= (1<<5) | (1<<4) | (1<<7) | (1<<6); //Toggle Match output for MAT0.0(P1.28), MAT0.1(P1.29)
-	//bits in LPC_TIM0->EMR[5:4] correspond to MAT0.0 functionality, similarly LPC_TIM0->EMR[7:6] correspond to MAT0.1
+	//bits in LPC_TIM0->EMR[5:4] corresponds to MAT0.0 functionality, similarly LPC_TIM0->EMR[7:6] corresponds to MAT0.1
 	
 	LPC_TIM0->TCR = 0x02; //Reset Timer
 	LPC_TIM0->TCR = 0x01; //Enable timer
