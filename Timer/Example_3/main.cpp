@@ -1,8 +1,8 @@
-/*(C) Umang Gajera - http://www.ocfreaks.com 2011-17.
-http://www.ocfreaks.com/lpc1768-timer-programming-tutorial/
+/*(C) Umang Gajera - https://www.ocfreaks.com 2011-17.
+https://www.ocfreaks.com/lpc1768-timer-programming-tutorial/
 LPC1768 Timer example 3.
 
-More Embedded tutorials @ http://www.ocfreaks.com/cat/embedded/
+More Embedded tutorials @ https://www.ocfreaks.com/cat/embedded/
 */
 
 #include <LPC17xx.h>
